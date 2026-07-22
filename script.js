@@ -1,16 +1,33 @@
 function copyIP(){
 
-const ip = "COMMING SOON"; // Remplace par ton IP
+    const ip = "play.lgmc.fr"; 
+    // Remplace cette IP par celle de ton serveur Minecraft
 
-navigator.clipboard.writeText(ip);
 
-document.getElementById("copied").innerHTML =
-"✅ IP copiée : " + ip;
+    navigator.clipboard.writeText(ip)
+    
+    .then(()=>{
 
-setTimeout(function(){
+        document.getElementById("message").innerHTML =
+        "✅ IP copiée : " + ip;
 
-document.getElementById("copied").innerHTML="";
+    })
 
-},3000);
+
+    .catch(()=>{
+
+        document.getElementById("message").innerHTML =
+        "❌ Impossible de copier l'IP";
+
+    });
+
+
+
+    setTimeout(()=>{
+
+        document.getElementById("message").innerHTML = "";
+
+    },3000);
+
 
 }
