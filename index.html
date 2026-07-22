@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LGMC - Loup Garou Minecraft</title>
+
+<title>LGMC | Loup Garou Minecraft</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -18,155 +24,291 @@
 🐺 LGMC
 </div>
 
+
 <nav>
 
-<a href="#apropos">À propos</a>
-<a href="#pourquoi">Pourquoi nous</a>
+<a href="#accueil">Accueil</a>
+<a href="#roles">Rôles</a>
 <a href="#faq">FAQ</a>
+<a href="#recrutement">Recrutement</a>
+
+<a class="nav-discord" href="https://discord.gg/BNgE8YpGQR" target="_blank">
+Discord
+</a>
 
 </nav>
 
 </header>
 
-<section class="hero">
 
-<h1>Loup Garou Minecraft</h1>
+
+<section id="accueil" class="hero">
+
+
+<h1>
+Loup Garou Minecraft
+</h1>
+
 
 <p>
-Le serveur Minecraft Java inspiré du célèbre jeu du Loup-Garou.
+Un serveur Minecraft Java inspiré du célèbre jeu du Loup-Garou.
 </p>
+
+
 
 <div class="buttons">
 
-<button onclick="copyIP()" class="copy">
+
+<button onclick="copyIP()">
 📋 Copier l'IP
 </button>
 
-<a href="https://discord.gg/BNgE8YpGQR" target="_blank" class="discord">
+
+
+<a href="https://discord.gg/BNgE8YpGQR" target="_blank">
 💬 Rejoindre Discord
 </a>
 
+
 </div>
 
-<p id="copied"></p>
+
+<p id="message"></p>
+
 
 </section>
 
-<section id="apropos">
 
-<h2>🐺 À propos</h2>
 
-<div class="cards">
 
-<div class="card">
-<h3>Java uniquement</h3>
+
+<section class="about">
+
+
+<h2>🐺 LGMC, qu'est-ce que c'est ?</h2>
+
 
 <p>
-Le serveur fonctionne uniquement sur Minecraft Java Edition.
+
+LGMC est un serveur Minecraft Java en développement
+qui reprend le célèbre jeu de société Loup-Garou
+dans Minecraft.
+
+<br><br>
+
+Les maîtres du jeu pourront organiser des parties.
+Les joueurs seront prévenus sur Discord lorsqu'une partie sera lancée.
+
+<br><br>
+
+Chaque partie sera limitée à 10 joueurs.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="roles">
+
+
+<h2>🎭 Les rôles</h2>
+
+
+
+<div class="role-container">
+
+
+
+<div class="role-card">
+
+<h3>🏹 Chasseur</h3>
+
+<p>
+Lorsqu'un Chasseur est tué pendant une partie,
+il a le droit de tuer une personne de la partie.
 </p>
 
 </div>
 
-<div class="card">
 
-<h3>Maîtres du jeu</h3>
+
+
+<div class="role-card">
+
+<h3>🧪 Sorcière</h3>
 
 <p>
-Les parties sont lancées uniquement par les maîtres du jeu.
+La Sorcière possède 2 potions pendant toute la partie :
+<br><br>
+🟢 Une potion pour sauver une personne.
+<br>
+🔴 Une potion pour tuer une personne choisie.
+<br><br>
+Une potion utilisée ne peut plus être réutilisée.
 </p>
 
 </div>
 
-<div class="card">
 
-<h3>10 joueurs</h3>
+
+
+
+<div class="role-card">
+
+<h3>🔮 Voyante</h3>
 
 <p>
-Les 10 premiers joueurs rejoignent la partie.
+Pendant la nuit, elle peut regarder la carte
+d'une personne qui joue.
 </p>
 
 </div>
 
+
+
+
+
+<div class="role-card">
+
+<h3>🐺 Loup-Garou</h3>
+
+<p>
+Pendant la nuit, les Loups-Garous doivent
+tuer un joueur.
+</p>
+
 </div>
+
+
+
+
+
+<div class="role-card">
+
+<h3>👧 Petite Fille</h3>
+
+<p>
+Pendant la nuit, elle doit se faire passer
+pour un Loup-Garou au péril de sa vie.
+</p>
+
+</div>
+
+
+
+
+
+<div class="role-card">
+
+<h3>👨 Villageois</h3>
+
+<p>
+Pendant la nuit, les Villageois ne font rien.
+</p>
+
+</div>
+
+
+
+
+
+<div class="role-card">
+
+<h3>💘 Cupidon</h3>
+
+<p>
+Lors de la première nuit, Cupidon choisit
+deux personnes parmi les joueurs.
+
+<br><br>
+
+Si l'une des deux personnes meurt,
+l'autre personne choisie meurt aussi.
+</p>
+
+</div>
+
+
+
+</div>
+
 
 </section>
 
-<section id="pourquoi">
 
-<h2>Pourquoi LGMC ?</h2>
 
-<div class="cards">
 
-<div class="card">
-🐺 Gameplay unique
-</div>
 
-<div class="card">
-🎭 Rôles exclusifs
-</div>
 
-<div class="card">
-👥 Communauté active
-</div>
-
-<div class="card">
-🛡 Staff sérieux
-</div>
-
-<div class="card">
-🏆 Événements fréquents
-</div>
-
-<div class="card">
-🚀 Développement constant
-</div>
-
-</div>
-
-</section>
 
 <section id="faq">
 
-<h2>FAQ</h2>
+
+<h2>❓ FAQ</h2>
+
+
+
+<div class="faq">
+
+
 
 <details>
 
-<summary>Java ou Bedrock ?</summary>
-
-<p>Java uniquement.</p>
-
-</details>
-
-<details>
-
-<summary>Pay To Win ?</summary>
-
-<p>Non.</p>
-
-</details>
-
-<details>
-
-<summary>Date d'ouverture ?</summary>
-
-<p>Pas encore annoncée.</p>
-
-</details>
-
-<details>
-
-<summary>Comment rejoindre une partie ?</summary>
+<summary>
+🛏️ Java ou Bedrock ?
+</summary>
 
 <p>
-Les maîtres du jeu lancent les parties.
-Vous serez notifié sur Discord.
+Java uniquement.
 </p>
 
 </details>
 
+
+
+
 <details>
 
-<summary>Comment signaler un bug ?</summary>
+<summary>
+💰 Le serveur est-il Pay-to-Win ?
+</summary>
+
+<p>
+Non, tous les joueurs peuvent progresser sans payer.
+</p>
+
+</details>
+
+
+
+
+<details>
+
+<summary>
+🚀 Quand ouvre le serveur ?
+</summary>
+
+<p>
+Aucune date prévue pour le moment.
+L'ouverture dépendra du développement et du staff disponible.
+</p>
+
+</details>
+
+
+
+
+<details>
+
+<summary>
+🛠️ Comment signaler un bug ?
+</summary>
 
 <p>
 Ouvrez un ticket sur Discord.
@@ -174,29 +316,78 @@ Ouvrez un ticket sur Discord.
 
 </details>
 
-</section>
 
-<section>
 
-<h2>Recrutement</h2>
 
-<div class="card">
+<details>
 
-Nous recrutons actuellement des membres du staff.
+<summary>
+🎮 Peut-on lancer une partie ?
+</summary>
 
-N'hésitez pas à rejoindre le Discord !
+<p>
+Non, seuls les maîtres du jeu peuvent lancer une partie.
+Les joueurs seront ping lorsqu'une partie sera disponible.
+</p>
+
+</details>
+
+
 
 </div>
 
+
 </section>
+
+
+
+
+
+
+
+<section id="recrutement">
+
+
+<h2>🛡 Recrutement</h2>
+
+
+<div class="box">
+
+Le serveur est actuellement en développement.
+
+Nous recherchons des personnes motivées pour aider
+au développement du projet LGMC.
+
+<br><br>
+
+Rejoignez notre Discord pour participer à l'aventure.
+
+</div>
+
+
+</section>
+
+
+
+
+
+
 
 <footer>
 
-© 2026 LGMC
+🐺 LGMC - Loup Garou Minecraft
+
+<br>
+
+© 2026 Tous droits réservés.
 
 </footer>
 
+
+
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
