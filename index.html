@@ -1,40 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
 
 <meta charset="UTF-8">
 
-<title>LGMC - Loup Garou Minecraft</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>🐺 LGMC - Loup Garou Minecraft</title>
+
+
+<!-- Aperçu Discord -->
+
+<meta property="og:title" content="🐺 LGMC - Loup Garou Minecraft">
+
+<meta property="og:description" content="🌕 LGMC est un serveur Minecraft Java inspiré du célèbre jeu du Loup-Garou. Survis, bluffe et élimine tes ennemis !">
+
+<meta property="og:url" content="https://creeper564.github.io/LGMC">
+
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#d8b45a">
+
+
 
 <link rel="stylesheet" href="css/style.css">
 
+
 </head>
+
 
 
 <body>
 
 
+
 <nav>
+
 
 <div class="logo">
 🐺 LGMC
 </div>
 
 
+
 <div class="menu">
 
 <a href="index.html">🏠 Accueil</a>
+
 <a href="roles.html">🎭 Rôles</a>
+
 <a href="serveur.html">⛏️ Serveur</a>
+
 <a href="faq.html">❓ FAQ</a>
+
 <a href="recrutement.html">🛡️ Recrutement</a>
+
 <a href="reglement.html">📜 Règlement</a>
+
 
 </div>
 
+
 </nav>
+
+
 
 
 <div id="notify">
@@ -43,23 +74,40 @@
 
 
 
-<div class="hero">
+
+
+<section class="hero">
+
 
 <div>
 
+
 <h1>
+
 LGMC
+
 <br>
+
 <span>
 Loup Garou Minecraft
 </span>
+
+
 </h1>
 
 
+
 <p>
-Le serveur Minecraft Java où stratégie,
-mensonge et survie s'affrontent.
+
+Un serveur Minecraft Java inspiré du célèbre jeu du Loup-Garou.
+
+<br>
+
+Manipule, enquête et survis avec ton équipe.
+
 </p>
+
+
 
 
 <button class="btn ip" onclick="copyIP()">
@@ -69,39 +117,64 @@ mensonge et survie s'affrontent.
 </button>
 
 
+
+
+
 <a class="btn discord"
 href="https://discord.gg/VOTREDISCORD"
 target="_blank">
 
-💬 Discord
+💬 Rejoindre Discord
 
 </a>
 
 
-</div>
 
 </div>
+
+
+</section>
+
+
+
 
 
 
 <section>
 
+
 <h2 class="title">
-🐺 Présentation
+
+🐺 Qu'est-ce que LGMC ?
+
 </h2>
+
 
 
 <div class="card">
 
+
 <p>
 
-LGMC est un serveur Minecraft Java inspiré du célèbre jeu du Loup-Garou.
 
-Les joueurs devront coopérer, mentir et survivre.
+LGMC est un serveur Minecraft Java en développement
+qui reprend le concept du célèbre jeu du Loup-Garou.
 
-Les parties sont organisées par les maîtres du jeu.
 
-Chaque partie accueille jusqu'à 10 joueurs.
+<br><br>
+
+
+Chaque partie oppose les villageois et les loups
+dans des parties remplies de stratégie,
+de mensonges et de trahisons.
+
+
+<br><br>
+
+
+Les maîtres du jeu organisent les parties
+et les joueurs sont prévenus sur Discord.
+
 
 </p>
 
@@ -113,23 +186,196 @@ Chaque partie accueille jusqu'à 10 joueurs.
 
 
 
-<footer>
 
-🐺 LGMC - Loup Garou Minecraft
+
+
+<section>
+
+
+<h2 class="title">
+
+🎮 Informations
+
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h2>
+⛏️ Minecraft
+</h2>
+
+<p>
+Version Java uniquement.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>
+👥 Joueurs
+</h2>
+
+<p>
+Parties limitées à 10 joueurs.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+🌕 Gameplay
+</h2>
+
+<p>
+Survis aux nuits et découvre les loups.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+
+🚀 Rejoins l'aventure
+
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Le serveur est actuellement en développement.
+
+Nous recherchons des joueurs motivés
+pour participer à l'évolution de LGMC.
+
+</p>
+
+
 
 <br>
 
+
+
+<a class="btn discord"
+href="https://discord.gg/Cd4FgajU35"
+target="_blank">
+
+💬 Discord
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+🐺 LGMC - Loup Garou Minecraft
+
+<br><br>
+
 © 2026 Tous droits réservés.
+
 
 </footer>
 
 
+
+
+
+
 <a class="back" href="javascript:history.back()">
+
 ⬅ Retour
+
 </a>
 
 
-<script src="js/script.js"></script>
+
+
+
+
+<script>
+
+
+const IP="play.lgmc.fr";
+
+
+
+function copyIP(){
+
+
+navigator.clipboard.writeText(IP);
+
+
+
+let notification=document.getElementById("notify");
+
+
+notification.style.display="block";
+
+
+
+setTimeout(()=>{
+
+
+notification.style.display="none";
+
+
+},2500);
+
+
+
+}
+
+
+</script>
+
+
+
 
 
 </body>
