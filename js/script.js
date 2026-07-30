@@ -66,43 +66,16 @@ function copyIP(){
 
 const members = document.getElementById("members");
 
-
-
-if(members){
-
-
-fetch(
-`https://discord.com/api/guilds/${SERVER_ID}/widget.json`
-)
-
-
-.then(response=>response.json())
-
-
-.then(data=>{
-
-
-    members.innerHTML =
-
-    data.presence_count +
-
-    " membres en ligne";
-
-
-})
-
-
-.catch(()=>{
-
-
-    members.innerHTML =
-
-    "Discord indisponible";
-
-
-});
-
-
+if (members) {
+    fetch("http://IP_DU_VPS:6111/api/members") // Remplace par ton IP ou ton domaine
+        .then(response => response.json())
+        .then(data => {
+            members.textContent = `${data.members} membres`;
+        })
+        .catch(error => {
+            console.error(error);
+            members.textContent = "Indisponible";
+        });
 }
 
 
